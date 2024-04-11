@@ -1,0 +1,19 @@
+{
+  "name": "exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass style.scss style.css",
+    "watch-sass": "sass --watch style.scss style.css",
+    "start": "concurrently \"npm run watch-sass\" \"npm run server\"",
+    "server": "browser-sync start --server --files 'css/*.css, *.html, js/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all": "^0.0.0",
+    "typescript": "^5.3.3"
+  }
+}
